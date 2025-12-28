@@ -24,6 +24,6 @@ while True:
   else:
     print("Invalid Selection. Try again.")
 
-if_name_=="_main_":
+if __name__ == "_main_":
   main()
   
