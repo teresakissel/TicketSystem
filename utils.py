@@ -36,12 +36,12 @@ def display_tickets(): # Checks all tickets
     print("No tickets available.") # Responds to user
     return # Exits
 
-for ticket in tickets: # Loops through each ticket
-  print(f"ID: {ticket['id']} | " # Provides output to user
-        f"Customer: {ticket['customer']} | "
-        f"Issue: {ticket['issue_type']} | "
-        f"Priority: {ticket['priority']} | "
-        f"Status: {ticket['status']}")
+  for ticket in tickets: # Loops through each ticket
+    print(f"ID: {ticket['id']} | " # Provides output to user
+          f"Customer: {ticket['customer']} | "
+          f"Issue: {ticket['issue_type']} | "
+          f"Priority: {ticket['priority']} | "
+          f"Status: {ticket['status']}")
 def update_ticket_status(tickets): # Update an existing tickets status
   ticket_id = input("Enter ticket ID to update: ") # gathers input
   for ticket in tickets: # Find a match
