@@ -44,12 +44,11 @@ for ticket in tickets: # Loops through each ticket
         f"Status: {ticket['status']}")
 def update_ticket_status(tickets): # Update an existing tickets status
   ticket_id = input("Enter ticket ID to update: ") # gathers input
-
-for ticket in tickets: # Find a match
-  if str(ticket["id"]) == ticket_id: # Convert ID to string
-    new_status = input("Enter new status (Open/In Progress/Resolved): ") # Take user input
-    ticket["status"] = new_status # Replace ticket status
-    print("Ticket updated successfully") # Provide confirmation to user
-    return # Exit function after completion
+  for ticket in tickets: # Find a match
+    if str(ticket["id"]) == ticket_id: # Convert ID to string
+      new_status = input("Enter new status (Open/In Progress/Resolved): ") # Take user input
+      ticket["status"] = new_status # Replace ticket status
+      print("Ticket updated successfully") # Provide confirmation to user
+      return # Exit function after completion
 print("Ticket not found") # Returned if no match is found
 
