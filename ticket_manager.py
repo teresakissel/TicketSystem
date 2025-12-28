@@ -5,7 +5,7 @@ def main():
 while True:
   print("n=== Banking Support Ticket System ===")
   print("1. Create Support Ticket")
-  Print("2. View All Tickets")
+  print("2. View All Tickets")
   print("3. Update Ticket Status")
   print("4. Exit")
 
