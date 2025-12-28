@@ -26,7 +26,7 @@ ticket = { # Stores individual ticket as a dictionary
   "customer": customer,
   "issue_type": issue_type,
   "priority": priority,
-  "status": "Open:
+  "status": "Open"
 }
 tickets.append(ticket) # Adds ticket to list
 print("Ticket created successfully.") # Provides confirmation message to user
