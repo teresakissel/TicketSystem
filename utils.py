@@ -17,19 +17,19 @@ def save_tickets(): # Accepts tickets
 def create_tickets(): # Add a new ticket
   ticket_id = len(tickets) + 1 # Assigns an ID to each ticket
 
-customer = input("Enter customer name: ") # Collects ticket details, user input
-issue_type = input("Enter issue type: ")
-priority = input("Enter priority (Low/Medium/High): ")
+  customer = input("Enter customer name: ") # Collects ticket details, user input
+  issue_type = input("Enter issue type: ")
+  priority = input("Enter priority (Low/Medium/High): ")
 
-ticket = { # Stores individual ticket as a dictionary
-  "id": ticket_id,
-  "customer": customer,
-  "issue_type": issue_type,
-  "priority": priority,
-  "status": "Open"
-}
-tickets.append(ticket) # Adds ticket to list
-print("Ticket created successfully.") # Provides confirmation message to user
+  ticket = { # Stores individual ticket as a dictionary
+    "id": ticket_id,
+    "customer": customer,
+    "issue_type": issue_type,
+    "priority": priority,
+    "status": "Open"
+  }
+  tickets.append(ticket) # Adds ticket to list
+  print("Ticket created successfully.") # Provides confirmation message to user
 
 def display_tickets(): # Checks all tickets
   if not tickets: # Checks if it is empty
