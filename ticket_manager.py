@@ -12,7 +12,7 @@ def main():
     choice = input("Enter Selection: ")
 
     if choice == "1":
-      create_ticket(tickets)
+      create_tickets(tickets)
     elif choice == "2":
       display_tickets(tickets)
     elif choice == "3":
