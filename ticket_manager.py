@@ -12,11 +12,11 @@ def main():
     choice = input("Enter Selection: ")
 
     if choice == "1":
-    create_ticket(tickets)
+      create_ticket(tickets)
     elif choice == "2":
-    display_tickets(tickets)
+      display_tickets(tickets)
     elif choice == "3":
-    update_ticket_status(tickets)
+      update_ticket_status(tickets)
     elif choice == "4":
       save_tickets(tickets)
       print("Exiting system. Tickets saved.")
