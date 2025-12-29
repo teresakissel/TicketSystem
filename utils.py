@@ -50,5 +50,5 @@ def update_ticket_status(tickets): # Update an existing tickets status
       ticket["status"] = new_status # Replace ticket status
       print("Ticket updated successfully") # Provide confirmation to user
       return # Exit function after completion
-print("Ticket not found") # Returned if no match is found
+  print("Ticket not found") # Returned if no match is found
 
