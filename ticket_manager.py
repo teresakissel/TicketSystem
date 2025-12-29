@@ -24,6 +24,6 @@ def main():
     else:
       print("Invalid Selection. Try again.")
 
-  if __name__ == "_main_":
-    main()
+if __name__ == "_main_":
+  main()
   
