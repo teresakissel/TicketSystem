@@ -3,18 +3,18 @@ import os # checks if a file exists
 
 FILE_NAME = "tickets.json"  # Sets constant file name
 
-def load_tickets(): # Defines function that will return a list of tickets
+def load_tickets(tickets): # Defines function that will return a list of tickets
   if not os.path.exists(FILE_NAME): # Checks if file exists
     return [] # Returns an empty list if it does not exist
 
     with open(FILE_NAME, "r") as file: # Opens file in read mode
       return json.load(file) # Reads data, converts to Python list, returns it to program
 
-def save_tickets(): # Accepts tickets
+def save_tickets(tickets): # Accepts tickets
   with open(FILE_NAME, "w") as file: # Opens file in write mode and can override data
     json.dump(tickets, file, indent=4) # Converts Python data to json, writes it to the file, and makes it human readable
 
-def create_tickets(): # Add a new ticket
+def create_tickets(tickets): # Add a new ticket
   ticket_id = len(tickets) + 1 # Assigns an ID to each ticket
 
   customer = input("Enter customer name: ") # Collects ticket details, user input
@@ -31,7 +31,7 @@ def create_tickets(): # Add a new ticket
   tickets.append(ticket) # Adds ticket to list
   print("Ticket created successfully.") # Provides confirmation message to user
 
-def display_tickets(): # Checks all tickets
+def display_tickets(tickets): # Checks all tickets
   if not tickets: # Checks if it is empty
     print("No tickets available.") # Responds to user
     return # Exits
