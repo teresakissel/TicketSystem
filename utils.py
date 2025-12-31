@@ -4,7 +4,7 @@ import os # checks if a file exists
 FILE_NAME = "tickets.json"  # Sets constant file name
 
 def load_tickets(): # Defines function that will return a list of tickets
-  if not os.path.exists(FILE_Name): # Checks if file exists
+  if not os.path.exists(FILE_NAME): # Checks if file exists
     return [] # Returns an empty list if it does not exist
 
     with open(FILE_NAME, "r") as file: # Opens file in read mode
