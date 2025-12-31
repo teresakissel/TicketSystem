@@ -1,6 +1,6 @@
 from utils import load_tickets, save_tickets, create_tickets, display_tickets, update_ticket_status
 def main():
-  tickets = load_tickets()
+  tickets = load_tickets(tickets)
 
   while True:
     print("n=== Banking Support Ticket System ===")
